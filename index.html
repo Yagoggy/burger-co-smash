@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smash &amp; Co. — Burger Cafe</title>
+  <meta name="description" content="Smash & Co. — handcrafted smash burgers, crispy fries, and creamy shakes made fresh daily." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">🍔 Smash<span>&amp;</span>Co.</a>
+      <nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#order" class="btn-order">Order Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Fresh • Juicy • Handcrafted</p>
+        <h1>Burgers That<br /><span>Hit Different.</span></h1>
+        <p class="hero-sub">Smashed-to-order patties, toasted brioche buns, and shakes worth driving across town for.</p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-primary">View Menu</a>
+          <a href="#order" class="btn btn-ghost">Order Online</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>12+</strong><span>Burgers</span></div>
+          <div><strong>4.9★</strong><span>Rating</span></div>
+          <div><strong>15min</strong><span>Avg. Wait</span></div>
+        </div>
+      </div>
+      <div class="hero-img"><span class="hero-fancy">🍔 Smash<span class="amp">&amp;</span>Co.</span></div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="container features-grid">
+      <div class="feature">
+        <span class="feature-ico">🥩</span>
+        <h3>100% Fresh Beef</h3>
+        <p>Never frozen, ground daily, smashed to crispy perfection.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-ico">🌱</span>
+        <h3>Veggie Options</h3>
+        <p>Plant-based patties that even the carnivores love.</p>
+      </div>
+      <div class="feature">
+        <span class="feature-ico">⚡</span>
+        <h3>Fast Pickup</h3>
+        <p>Order ahead and skip the line. Ready in 15 minutes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Our Menu</p>
+        <h2>Crowd Favorites</h2>
+        <p class="section-sub">Made fresh, served hot, gone fast.</p>
+      </div>
+      <div class="menu-grid" id="menuGrid"><!-- injected by script.js --></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-img"><img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80" alt="Chef cooking" /></div>
+      <div class="about-text">
+        <p class="eyebrow">Our Story</p>
+        <h2>Born From a Backyard Grill</h2>
+        <p>Smash &amp; Co. started in 2018 with a single cast-iron skillet and a stubborn belief that a burger should be simple, fresh, and unforgettable. Today we serve thousands of happy customers — but we still smash every patty by hand.</p>
+        <p>No shortcuts. No freezer. Just good food made by people who care.</p>
+        <a href="#contact" class="btn btn-primary">Visit Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order CTA -->
+  <section class="order" id="order">
+    <div class="container order-inner">
+      <h2>Hungry Yet?</h2>
+      <p>Order online for pickup or delivery. Your burger is 15 minutes away.</p>
+      <a href="#contact" class="btn btn-primary btn-lg">Start Your Order</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <p class="eyebrow">Find Us</p>
+        <h2>Come Say Hi 👋</h2>
+        <ul class="info-list">
+          <li><span>📍</span> 42 Grill Street, Flavor Town</li>
+          <li><span>🕐</span> Mon–Sun · 11:00 AM – 11:00 PM</li>
+          <li><span>📞</span> (555) 012-3456</li>
+          <li><span>✉️</span> hello@smashandco.cafe</li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <h3>Send us a message</h3>
+        <input type="text" id="name" placeholder="Your name" required />
+        <input type="email" id="email" placeholder="Your email" required />
+        <textarea id="message" rows="4" placeholder="Your message / order request" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">🍔 Smash<span>&amp;</span>Co.</a>
+      <p>© <span id="year"></span> Smash &amp; Co. Burger Cafe. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+        <a href="#" aria-label="Facebook">👍</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
